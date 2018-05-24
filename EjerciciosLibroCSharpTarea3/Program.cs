@@ -9,6 +9,11 @@ namespace EjerciciosLibroCSharpTarea3
     {
         static void Main(string[] args)
         {
+            EjerciciosLibroCSharpTarea3.Capítulo_9.Ejercicios1_3_4 c = new Capítulo_9.Ejercicios1_3_4();
+            c.NueveUno();
+            c.NueveTres();
+            c.NueveCinco();
+            Console.ReadKey();
         }
     }
 }
