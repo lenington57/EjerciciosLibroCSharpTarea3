@@ -9,13 +9,21 @@ namespace EjerciciosLibroCSharpTarea3
     {
         static void Main(string[] args)
         {
-            /*EjerciciosLibroCSharpTarea3.Capítulo_9.Ejercicios1_3_4 c = new Capítulo_9.Ejercicios1_3_4();
-            c.NueveUno();
-            c.NueveTres();
-            c.NueveCinco();*/
-
-            EjerciciosLibroCSharpTarea3.Capítulo_10.Estudiantes e = new Capítulo_10.Estudiantes("Maria Pérez", 15, "Femenino", "Pimentel", "Tercero", "(829-456-1230)");
-            e.ToString();
+            EjerciciosLibroCSharpTarea3.Menu m = new EjerciciosLibroCSharpTarea3.Menu();
+            m.Menus();
+            string resp;
+            do
+            {
+                Console.WriteLine("\nDesea volver al Menu si o no:  \nDigite: \n's' Para SI\n'n' Para NO");
+                resp = Console.ReadLine();
+                if (resp == "s")
+                {
+                    Console.Clear();
+                    m.Menus();
+                }
+                else if (resp == "n")
+                    System.Environment.Exit(-1);
+            } while (resp != "n");
             Console.ReadKey();
         }
     }

@@ -180,7 +180,6 @@ namespace EjerciciosLibroCSharpTarea3.Capítulo_10
             sb.AppendFormat("\nNombre : {0}\nEdad: {1} años\nGenero: {2}\nDireccion: {3}\nGrado: {4}\nNo. de Teléfono de sus Padres: {5}", NombreCompleto, Edad, Genero, Direccion, Grado, NoTelefonoPadres);
             return (sb.ToString());
         }
-        //Estudiantes e = new Estudiantes("Maria Pérez", 15, "Femenino", "Pimentel", "Tercero", "(829-456-1230)");
     }
 
     public class Poligono
